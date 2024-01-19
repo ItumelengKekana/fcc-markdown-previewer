@@ -1,38 +1,85 @@
+body {
+	background-color: rgb(135, 181, 181);
+	font-family: 'Roboto', sans-serif;
+}
+
 .App {
-  text-align: center;
+	text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading {
+	background-color: #4aa3a3;
+	padding: 0.3rem;
+	border: 1px solid #1d2f2f;
+	box-shadow: 1px 1px 10px 2px #3a5f5f;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.editor {
+	max-width: 550px;
+	margin: 1.125rem auto;
 }
 
-.App-link {
-  color: #61dafb;
+#editor {
+	background-color: rgb(192, 216, 216);
+	border: 1px solid #1d2f2f;
+	box-shadow: 1px 1px 10px 2px #3a5f5f;
+	border-top: none;
+
+	width: 500px;
+	min-height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.preview {
+	overflow-wrap: break-word;
+	max-width: 900px;
+	margin: 1.25rem auto;
+}
+
+#preview {
+	background-color: rgb(192, 216, 216);
+	border: 1px solid #1d2f2f;
+	box-shadow: 1px 1px 10px 2px #3a5f5f;
+
+	min-width: 400px;
+	max-width: 900px;
+	min-height: 50vh;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 1rem;
+
+	overflow-wrap: break-word;
+	text-align: left;
+	line-height: 24px;
+	box-sizing: border-box;
+}
+
+#preview img {
+	display: block;
+	max-width: 90%;
+	margin: 2rem auto;
+}
+
+#preview code {
+	background: white;
+	font-size: 0.875rem;
+	font-weight: bold;
+}
+
+#preview pre {
+	display: block;
+	overflow: auto;
+	background: white;
+	padding: 5px;
+	line-height: 1.2;
 }
